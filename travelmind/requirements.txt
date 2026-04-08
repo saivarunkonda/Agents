@@ -1,0 +1,24 @@
+# TravelMind — Autonomous Travel Booking Agent
+# =============================================
+# No external dependencies required.
+# This project uses only the Python standard library.
+#
+# Standard library modules used:
+#   - hashlib      : SHA-256 signature simulation for AP2 mandates
+#   - base64       : JWT-like token encoding in A2A auth module
+#   - uuid         : Unique ID generation for tasks, mandates, transactions
+#   - json         : Loading mock data files and serialising mandate payloads
+#   - time         : Token expiry checks and booking reference generation
+#   - datetime     : ISO-8601 timestamp generation for mandates
+#   - pathlib      : Cross-platform file path resolution for data files
+#   - copy         : Deep-copying flight/hotel/car records to prevent mutation
+#   - sys          : sys.path bootstrapping so packages resolve correctly
+#   - dataclasses  : @dataclass decorator for AgentCard, A2ATask, mandates
+#   - typing       : Type hints (List, Dict, Optional, Any, Tuple)
+#
+# Python version requirement: >= 3.8
+#   (uses f-strings, dataclasses, walrus-free control flow, dict insertion order)
+#
+# To run:
+#   cd Agent/project3_travelmind
+#   python main.py

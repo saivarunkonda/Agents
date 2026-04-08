@@ -1,0 +1,23 @@
+[
+  {
+    "id": "P001",
+    "name": "Alice Johnson",
+    "dob": "1985-03-15",
+    "doctor": "Dr. Smith",
+    "conditions": ["hypertension", "diabetes"]
+  },
+  {
+    "id": "P002",
+    "name": "Bob Williams",
+    "dob": "1972-07-22",
+    "doctor": "Dr. Lee",
+    "conditions": ["asthma"]
+  },
+  {
+    "id": "P003",
+    "name": "Carol Davis",
+    "dob": "1990-11-08",
+    "doctor": "Dr. Smith",
+    "conditions": ["migraine"]
+  }
+]

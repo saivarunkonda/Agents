@@ -1,0 +1,66 @@
+{
+  "blog": {
+    "tone": "conversational yet authoritative",
+    "structure": ["engaging_hook", "context", "main_points", "examples", "conclusion", "cta"],
+    "avg_word_count": 1200,
+    "paragraph_length": "3-4 sentences",
+    "use_subheadings": true,
+    "reading_level": "8th grade",
+    "tips": [
+      "Open with a surprising fact or bold statement to grab attention",
+      "Use 'you' and 'we' to speak directly to the reader",
+      "Break complex ideas into digestible bullet points or numbered lists",
+      "Include at least one real-world example per major point",
+      "End each section with a transition sentence to maintain flow",
+      "Use active voice wherever possible",
+      "Keep sentences under 25 words on average",
+      "Add a clear call-to-action at the end"
+    ],
+    "forbidden": [
+      "Avoid jargon without explanation",
+      "No passive voice overuse",
+      "Do not use more than 3 consecutive sentences without a transition"
+    ]
+  },
+  "technical": {
+    "tone": "precise and detailed",
+    "structure": ["abstract", "introduction", "methodology", "findings", "conclusion"],
+    "avg_word_count": 2500,
+    "paragraph_length": "4-6 sentences",
+    "use_subheadings": true,
+    "reading_level": "college",
+    "tips": [
+      "Define all technical terms at first use",
+      "Support every claim with a citation or data point",
+      "Use numbered sections and subsections",
+      "Include code snippets or formulas where relevant",
+      "Maintain third-person perspective throughout",
+      "Be precise with measurements, percentages, and dates"
+    ],
+    "forbidden": [
+      "No colloquialisms or informal language",
+      "Avoid first-person singular (use 'we' or passive where needed)",
+      "Do not make unsupported claims"
+    ]
+  },
+  "news": {
+    "tone": "objective and factual",
+    "structure": ["headline", "lead_paragraph", "who_what_when_where_why", "supporting_details", "quotes", "background"],
+    "avg_word_count": 600,
+    "paragraph_length": "1-2 sentences",
+    "use_subheadings": false,
+    "reading_level": "6th grade",
+    "tips": [
+      "Lead with the most important information (inverted pyramid)",
+      "Answer the 5 Ws in the first two paragraphs",
+      "Keep paragraphs short for scanability",
+      "Use direct quotes to add authenticity",
+      "Remain neutral and objective at all times"
+    ],
+    "forbidden": [
+      "No opinions or editorializing",
+      "Avoid sensationalist language",
+      "Do not bury the lead"
+    ]
+  }
+}

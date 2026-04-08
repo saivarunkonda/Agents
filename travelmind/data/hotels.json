@@ -1,0 +1,7 @@
+[
+  {"id": "HT001", "city": "Paris", "name": "Hotel Le Marais", "stars": 4, "price_per_night": 180, "available": true, "amenities": ["wifi", "breakfast", "gym"]},
+  {"id": "HT002", "city": "Paris", "name": "Ibis Paris Centre", "stars": 3, "price_per_night": 95, "available": true, "amenities": ["wifi"]},
+  {"id": "HT003", "city": "Paris", "name": "The Ritz Paris", "stars": 5, "price_per_night": 850, "available": false, "amenities": ["wifi", "spa", "pool", "concierge"]},
+  {"id": "HT004", "city": "London", "name": "Premier Inn London", "stars": 3, "price_per_night": 110, "available": true, "amenities": ["wifi", "breakfast"]},
+  {"id": "HT005", "city": "London", "name": "The Savoy", "stars": 5, "price_per_night": 650, "available": true, "amenities": ["wifi", "spa", "pool"]}
+]

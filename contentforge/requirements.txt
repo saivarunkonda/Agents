@@ -1,0 +1,7 @@
+# ContentForge - Multi-Agent Content Creation Pipeline
+# No external dependencies required - pure Python stdlib only
+#
+# Python >= 3.9 recommended (uses dataclasses, typing, enum, uuid, json, etc.)
+#
+# To run:
+#   python main.py

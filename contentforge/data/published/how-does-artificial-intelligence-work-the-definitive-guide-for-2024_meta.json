@@ -1,0 +1,63 @@
+{
+  "title": "How Does Artificial Intelligence Work: The Definitive Guide for 2024",
+  "slug": "how-does-artificial-intelligence-work-the-definitive-guide-for-2024",
+  "published_at": "2026-04-08T01:40:52.057096",
+  "word_count": 1091,
+  "char_count": 7533,
+  "md_file": "how-does-artificial-intelligence-work-the-definitive-guide-for-2024.md",
+  "meta_file": "how-does-artificial-intelligence-work-the-definitive-guide-for-2024_meta.json",
+  "seo": {
+    "meta_title": "Artificial Intelligence: Artificial Intelligence Guide 2024",
+    "meta_description": "Explore the world of artificial intelligence — from groundbreaking statistics to future predictions. Your essential Artificial Intelligence resource, updated...",
+    "keywords": [
+      "artificial intelligence",
+      "AI technology",
+      "machine learning",
+      "deep learning",
+      "neural networks",
+      "AI applications",
+      "AI future"
+    ],
+    "tags": [
+      "Artificial Intelligence",
+      "Ai Technology",
+      "Machine Learning",
+      "Deep Learning",
+      "Neural Networks",
+      "Ai Applications",
+      "Automation",
+      "Robotics"
+    ],
+    "primary_keyword": "artificial intelligence"
+  },
+  "pipeline": {
+    "system": "ContentForge",
+    "agents": [
+      "ResearcherAgent",
+      "WriterAgent",
+      "EditorAgent",
+      "SEOAgent",
+      "PublisherAgent"
+    ],
+    "protocols": [
+      "ACP",
+      "MCP"
+    ],
+    "run_date": "2026-04-08"
+  },
+  "readability": {
+    "word_count": 1038,
+    "sentence_count": 55,
+    "paragraph_count": 34,
+    "avg_sentence_length": 18.9,
+    "avg_word_length": 5.4,
+    "syllable_count": 1884,
+    "flesch_score": 34.1,
+    "reading_level": "Difficult (college)",
+    "reading_time_minutes": 4.4,
+    "issues": [
+      "Readability score 34.1 is quite low — consider simplifying sentence structure and vocabulary"
+    ]
+  },
+  "edits_summary": []
+}

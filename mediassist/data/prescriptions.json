@@ -1,0 +1,20 @@
+[
+  {
+    "patient_id": "P001",
+    "medication": "Metformin 500mg",
+    "refills_remaining": 2,
+    "last_filled": "2025-07-01"
+  },
+  {
+    "patient_id": "P001",
+    "medication": "Lisinopril 10mg",
+    "refills_remaining": 0,
+    "last_filled": "2025-06-15"
+  },
+  {
+    "patient_id": "P002",
+    "medication": "Albuterol Inhaler",
+    "refills_remaining": 3,
+    "last_filled": "2025-07-20"
+  }
+]

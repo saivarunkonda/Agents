@@ -1,0 +1,182 @@
+[
+  {
+    "id": "E001",
+    "name": "Sony WH-1000XM5 Headphones",
+    "category": "Electronics",
+    "price": 279.99,
+    "rating": 4.8,
+    "stock": 15,
+    "description": "Industry-leading noise cancellation wireless headphones with 30-hour battery life and multipoint connection.",
+    "tags": ["wireless", "noise-cancellation", "audio", "sony", "premium"]
+  },
+  {
+    "id": "E002",
+    "name": "Anker Soundcore Q45",
+    "category": "Electronics",
+    "price": 59.99,
+    "rating": 4.5,
+    "stock": 32,
+    "description": "Affordable wireless headphones with great battery life, Hi-Res Audio, and foldable design.",
+    "tags": ["wireless", "budget", "audio", "anker", "foldable"]
+  },
+  {
+    "id": "E003",
+    "name": "Apple AirPods Pro (2nd Gen)",
+    "category": "Electronics",
+    "price": 249.00,
+    "rating": 4.7,
+    "stock": 22,
+    "description": "Active noise cancellation earbuds with adaptive transparency, spatial audio, and MagSafe charging case.",
+    "tags": ["wireless", "earbuds", "apple", "noise-cancellation", "audio"]
+  },
+  {
+    "id": "E004",
+    "name": "JBL Flip 6 Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 89.95,
+    "rating": 4.6,
+    "stock": 40,
+    "description": "Portable waterproof Bluetooth speaker with 12 hours of playtime and bold JBL Original Pro Sound.",
+    "tags": ["bluetooth", "speaker", "waterproof", "jbl", "portable"]
+  },
+  {
+    "id": "E005",
+    "name": "Samsung 65\" 4K QLED TV",
+    "category": "Electronics",
+    "price": 897.99,
+    "rating": 4.6,
+    "stock": 8,
+    "description": "65-inch QLED 4K smart TV with Quantum HDR, built-in Alexa, and Gaming Hub.",
+    "tags": ["tv", "4k", "samsung", "smart-tv", "qled"]
+  },
+  {
+    "id": "E006",
+    "name": "Logitech MX Master 3S Mouse",
+    "category": "Electronics",
+    "price": 99.99,
+    "rating": 4.7,
+    "stock": 55,
+    "description": "Advanced wireless mouse with 8K DPI sensor, silent clicks, and MagSpeed electromagnetic scrolling.",
+    "tags": ["mouse", "wireless", "logitech", "productivity", "ergonomic"]
+  },
+  {
+    "id": "C001",
+    "name": "Nike Air Max 270 Sneakers",
+    "category": "Clothing",
+    "price": 150.00,
+    "rating": 4.5,
+    "stock": 28,
+    "description": "Lifestyle sneakers featuring Nike's largest Max Air unit yet for all-day comfort and bold style.",
+    "tags": ["shoes", "sneakers", "nike", "comfort", "lifestyle"]
+  },
+  {
+    "id": "C002",
+    "name": "Levi's 501 Original Jeans",
+    "category": "Clothing",
+    "price": 69.50,
+    "rating": 4.4,
+    "stock": 60,
+    "description": "The original straight-fit jeans in classic denim. Iconic since 1873, button fly, sitting at waist.",
+    "tags": ["jeans", "denim", "levis", "classic", "straight-fit"]
+  },
+  {
+    "id": "C003",
+    "name": "Patagonia Better Sweater Fleece Jacket",
+    "category": "Clothing",
+    "price": 139.00,
+    "rating": 4.8,
+    "stock": 18,
+    "description": "Classic fleece jacket made from 100% recycled polyester with anti-pill finish and sweater-knit face.",
+    "tags": ["jacket", "fleece", "patagonia", "outdoor", "sustainable"]
+  },
+  {
+    "id": "C004",
+    "name": "Uniqlo Ultra Light Down Vest",
+    "category": "Clothing",
+    "price": 49.90,
+    "rating": 4.3,
+    "stock": 45,
+    "description": "Lightweight packable down vest that folds into its own pocket. Warm and minimalist design.",
+    "tags": ["vest", "down", "uniqlo", "packable", "lightweight"]
+  },
+  {
+    "id": "C005",
+    "name": "Columbia Sportswear Watertight II Rain Jacket",
+    "category": "Clothing",
+    "price": 79.99,
+    "rating": 4.5,
+    "stock": 35,
+    "description": "Packable waterproof rain jacket with Omni-Tech seam-sealed shell and adjustable hood.",
+    "tags": ["jacket", "waterproof", "columbia", "outdoor", "rain"]
+  },
+  {
+    "id": "C006",
+    "name": "Adidas Ultraboost 22 Running Shoes",
+    "category": "Clothing",
+    "price": 189.99,
+    "rating": 4.6,
+    "stock": 20,
+    "description": "High-performance running shoes with BOOST midsole technology and Primeknit+ upper for an adaptive fit.",
+    "tags": ["shoes", "running", "adidas", "boost", "athletic"]
+  },
+  {
+    "id": "H001",
+    "name": "Instant Pot Duo 7-in-1 Pressure Cooker",
+    "category": "Home",
+    "price": 89.99,
+    "rating": 4.7,
+    "stock": 50,
+    "description": "7-in-1 multi-use programmable pressure cooker, slow cooker, rice cooker, steamer, saute, yogurt maker, and warmer.",
+    "tags": ["kitchen", "pressure-cooker", "instant-pot", "cooking", "multi-use"]
+  },
+  {
+    "id": "H002",
+    "name": "Dyson V15 Detect Vacuum",
+    "category": "Home",
+    "price": 649.99,
+    "rating": 4.7,
+    "stock": 12,
+    "description": "Cordless vacuum with laser dust detection, LCD screen, and up to 60 minutes of run time.",
+    "tags": ["vacuum", "cordless", "dyson", "cleaning", "laser"]
+  },
+  {
+    "id": "H003",
+    "name": "Philips Hue Starter Kit (4 Bulbs)",
+    "category": "Home",
+    "price": 129.99,
+    "rating": 4.5,
+    "stock": 30,
+    "description": "Smart LED bulb starter kit with Bridge, supporting 16 million colors and voice control via Alexa and Google.",
+    "tags": ["smart-home", "lighting", "philips", "led", "color"]
+  },
+  {
+    "id": "H004",
+    "name": "Cuisinart 12-Cup Coffee Maker",
+    "category": "Home",
+    "price": 79.95,
+    "rating": 4.4,
+    "stock": 42,
+    "description": "Programmable 12-cup coffee maker with Brew Pause, 24-hour auto brew, and adjustable keep-warm plate.",
+    "tags": ["coffee", "kitchen", "cuisinart", "programmable", "appliance"]
+  },
+  {
+    "id": "H005",
+    "name": "Casper Original Foam Pillow",
+    "category": "Home",
+    "price": 65.00,
+    "rating": 4.3,
+    "stock": 70,
+    "description": "Ergonomically designed foam pillow with a soft outer layer and firm inner core for head and neck support.",
+    "tags": ["pillow", "sleep", "casper", "foam", "ergonomic"]
+  },
+  {
+    "id": "H006",
+    "name": "iRobot Roomba i3+ Self-Emptying Robot Vacuum",
+    "category": "Home",
+    "price": 349.99,
+    "rating": 4.5,
+    "stock": 9,
+    "description": "Robot vacuum with auto-emptying base, smart mapping, works with Alexa, and ideal for pet hair.",
+    "tags": ["robot-vacuum", "smart-home", "irobot", "cleaning", "auto-empty"]
+  }
+]

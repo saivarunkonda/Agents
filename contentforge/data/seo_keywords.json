@@ -1,0 +1,86 @@
+{
+  "artificial intelligence": {
+    "primary": ["artificial intelligence", "AI technology", "machine learning"],
+    "secondary": ["deep learning", "neural networks", "AI applications", "AI future"],
+    "long_tail": [
+      "how does artificial intelligence work",
+      "AI impact on jobs",
+      "AI tools for business"
+    ],
+    "search_volume": {
+      "artificial intelligence": 90500,
+      "AI technology": 12100,
+      "machine learning": 60500,
+      "deep learning": 40500,
+      "neural networks": 27100
+    },
+    "related_topics": [
+      "automation",
+      "robotics",
+      "data science",
+      "natural language processing",
+      "computer vision"
+    ],
+    "competitor_keywords": [
+      "AI vs human intelligence",
+      "best AI tools 2024",
+      "AI for small business"
+    ]
+  },
+  "climate change": {
+    "primary": ["climate change", "global warming", "climate crisis"],
+    "secondary": ["carbon emissions", "renewable energy", "sustainability"],
+    "long_tail": [
+      "effects of climate change",
+      "how to fight climate change",
+      "climate change solutions"
+    ],
+    "search_volume": {
+      "climate change": 246000,
+      "global warming": 135000,
+      "climate crisis": 22200,
+      "carbon emissions": 18100,
+      "renewable energy": 90500
+    },
+    "related_topics": [
+      "greenhouse gases",
+      "carbon footprint",
+      "solar energy",
+      "wind power",
+      "electric vehicles"
+    ],
+    "competitor_keywords": [
+      "climate change facts 2024",
+      "how to reduce carbon footprint",
+      "best renewable energy sources"
+    ]
+  },
+  "space exploration": {
+    "primary": ["space exploration", "space travel", "NASA missions"],
+    "secondary": ["Mars mission", "SpaceX", "space technology"],
+    "long_tail": [
+      "future of space exploration",
+      "commercial space travel",
+      "space colonization"
+    ],
+    "search_volume": {
+      "space exploration": 74000,
+      "space travel": 40500,
+      "NASA missions": 18100,
+      "SpaceX": 246000,
+      "Mars mission": 22200
+    },
+    "related_topics": [
+      "astronomy",
+      "rocket science",
+      "satellites",
+      "astronauts",
+      "interplanetary travel"
+    ],
+    "competitor_keywords": [
+      "space exploration history",
+      "next Moon landing",
+      "private space companies"
+    ]
+  }
+}

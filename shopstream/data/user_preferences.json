@@ -1,0 +1,41 @@
+{
+  "user123": {
+    "name": "Alex Johnson",
+    "budget_max": 300,
+    "preferred_brands": ["Sony", "Apple", "Logitech"],
+    "preferred_categories": ["Electronics"],
+    "past_purchases": ["E001", "E006"],
+    "wishlist": ["C003", "H002"],
+    "size_preferences": {
+      "clothing": "M",
+      "shoes": "10"
+    },
+    "notes": "Prefers premium quality over price. Interested in noise-cancellation audio gear."
+  },
+  "user456": {
+    "name": "Jordan Lee",
+    "budget_max": 100,
+    "preferred_brands": ["Anker", "JBL", "Uniqlo", "Cuisinart"],
+    "preferred_categories": ["Electronics", "Home"],
+    "past_purchases": [],
+    "wishlist": ["E002", "H001"],
+    "size_preferences": {
+      "clothing": "L",
+      "shoes": "11"
+    },
+    "notes": "Budget-conscious shopper. Looks for best value. Interested in home appliances and affordable audio."
+  },
+  "user789": {
+    "name": "Sam Rivera",
+    "budget_max": 200,
+    "preferred_brands": ["Nike", "Adidas", "Columbia", "Patagonia"],
+    "preferred_categories": ["Clothing"],
+    "past_purchases": ["C001", "C005"],
+    "wishlist": ["C003", "C006"],
+    "size_preferences": {
+      "clothing": "S",
+      "shoes": "8"
+    },
+    "notes": "Outdoor enthusiast. Prefers sustainable and durable clothing brands. Active lifestyle."
+  }
+}

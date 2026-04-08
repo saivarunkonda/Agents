@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopStream — AI Shopping Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🛍️</span>
+        <div class="logo-text">
+          <h1>ShopStream</h1>
+          <p class="logo-sub">AI Shopping Assistant</p>
+        </div>
+      </div>
+      <div class="protocol-badges">
+        <span class="badge badge-agui" title="Agent-User Interface Protocol">⚡ AG-UI</span>
+        <span class="badge badge-mcp"  title="Model Context Protocol">🔧 MCP</span>
+        <span class="badge badge-sse"  title="Server-Sent Events">📡 SSE</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       SEARCH BAR
+       ═══════════════════════════════════════════════════════════════════ -->
+  <main class="main-content">
+
+    <section class="search-section">
+      <div class="search-card">
+        <h2 class="search-title">What are you looking for?</h2>
+        <p class="search-hint">
+          The agent will search the catalog, personalise results, and stream
+          live updates to this page using <strong>AG-UI events</strong> over
+          <strong>SSE</strong> while calling <strong>MCP tools</strong> internally.
+        </p>
+
+        <div class="search-form">
+          <!-- User selector -->
+          <div class="input-group">
+            <label for="user-select">👤 Shopper profile</label>
+            <select id="user-select" class="input-field">
+              <option value="user123">Alex Johnson — electronics enthusiast, budget $300</option>
+              <option value="user456">Jordan Lee  — budget-conscious, budget $100</option>
+              <option value="user789">Sam Rivera  — outdoor &amp; clothing, budget $200</option>
+            </select>
+          </div>
+
+          <!-- Query input -->
+          <div class="input-group query-group">
+            <label for="query-input">🔍 Search query</label>
+            <input
+              type="text"
+              id="query-input"
+              class="input-field"
+              placeholder="e.g. wireless headphones, rain jacket, coffee maker…"
+              value="wireless headphones"
+              autocomplete="off"
+            />
+          </div>
+
+          <!-- Search button -->
+          <button id="search-btn" class="search-btn" onclick="startSearch()">
+            <span class="btn-icon">▶</span>
+            <span class="btn-label">Search</span>
+          </button>
+        </div>
+
+        <!-- Quick-search chips -->
+        <div class="quick-chips">
+          <span class="chips-label">Try:</span>
+          <button class="chip" onclick="setQuery('wireless headphones')">wireless headphones</button>
+          <button class="chip" onclick="setQuery('rain jacket outdoor')">rain jacket</button>
+          <button class="chip" onclick="setQuery('coffee maker kitchen')">coffee maker</button>
+          <button class="chip" onclick="setQuery('robot vacuum smart home')">robot vacuum</button>
+          <button class="chip" onclick="setQuery('running shoes')">running shoes</button>
+          <button class="chip" onclick="setQuery('budget bluetooth speaker')">bluetooth speaker</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         AGENT STATUS BAR
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="status-section" class="status-section hidden">
+      <div class="status-bar">
+        <div class="status-indicator">
+          <span id="status-dot" class="status-dot"></span>
+          <span id="status-label" class="status-label">Idle</span>
+        </div>
+        <div class="status-meta">
+          <span id="run-id-display" class="meta-tag"></span>
+          <span id="event-counter" class="meta-tag">0 events</span>
+        </div>
+        <button id="cancel-btn" class="cancel-btn hidden" onclick="cancelStream()">
+          ✕ Cancel
+        </button>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         AGENT THINKING — Live tool-call log
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="thinking-section" class="thinking-section hidden">
+      <div class="section-header">
+        <h3>
+          <span class="thinking-pulse" id="thinking-pulse">●</span>
+          Agent Activity
+          <span class="section-subtitle">— live MCP tool calls via AG-UI TOOL_CALL events</span>
+        </h3>
+      </div>
+      <div id="tool-call-log" class="tool-call-log">
+        <!-- Tool call entries are injected here by app.js -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         STREAMING RESPONSE TEXT
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="response-section" class="response-section hidden">
+      <div class="section-header">
+        <h3>
+          💬 Assistant Response
+          <span class="section-subtitle">— streamed word-by-word via AG-UI TEXT_MESSAGE events</span>
+        </h3>
+      </div>
+      <div id="response-text" class="response-text">
+        <span id="response-content"></span>
+        <span id="response-cursor" class="cursor">▍</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         PRODUCT CARDS — populated via STATE_DELTA events
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="products-section" class="products-section hidden">
+      <div class="section-header">
+        <h3>
+          🛒 Products Found
+          <span id="products-count-badge" class="count-badge">0</span>
+          <span class="section-subtitle">— rendered from AG-UI STATE_DELTA events</span>
+        </h3>
+        <div class="products-filters">
+          <button class="filter-btn active" data-filter="all"    onclick="filterProducts('all')">All</button>
+          <button class="filter-btn"        data-filter="recommended" onclick="filterProducts('recommended')">⭐ Recommended</button>
+          <button class="filter-btn"        data-filter="Electronics" onclick="filterProducts('Electronics')">Electronics</button>
+          <button class="filter-btn"        data-filter="Clothing"    onclick="filterProducts('Clothing')">Clothing</button>
+          <button class="filter-btn"        data-filter="Home"        onclick="filterProducts('Home')">Home</button>
+        </div>
+      </div>
+      <div id="product-grid" class="product-grid">
+        <!-- Product cards are injected here by app.js -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         PROTOCOL EVENT LOG — educational raw event viewer
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="event-log-section" class="event-log-section hidden">
+      <div class="section-header collapsible" onclick="toggleEventLog()">
+        <h3>
+          📋 AG-UI Protocol Event Log
+          <span id="event-log-count-badge" class="count-badge">0</span>
+          <span class="section-subtitle">— raw SSE events for educational inspection</span>
+        </h3>
+        <button class="collapse-btn" id="event-log-toggle">▼ Collapse</button>
+      </div>
+      <div id="event-log-body" class="event-log-body">
+        <div class="event-log-toolbar">
+          <label class="filter-label">
+            <input type="checkbox" id="filter-state"   checked onchange="applyEventFilter()" /> State
+          </label>
+          <label class="filter-label">
+            <input type="checkbox" id="filter-text"    checked onchange="applyEventFilter()" /> Text
+          </label>
+          <label class="filter-label">
+            <input type="checkbox" id="filter-tools"   checked onchange="applyEventFilter()" /> Tools
+          </label>
+          <label class="filter-label">
+            <input type="checkbox" id="filter-lifecycle" checked onchange="applyEventFilter()" /> Lifecycle
+          </label>
+          <button class="small-btn" onclick="clearEventLog()">Clear</button>
+          <button class="small-btn" onclick="copyEventLog()">Copy JSON</button>
+        </div>
+        <div id="event-log" class="event-log">
+          <!-- Raw AG-UI events are appended here as they arrive -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       PRODUCT DETAIL MODAL
+       ═══════════════════════════════════════════════════════════════════ -->
+  <div id="product-modal" class="modal-overlay hidden" onclick="closeModal(event)">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-protocols">
+        <div class="protocol-card">
+          <strong>⚡ AG-UI Protocol</strong>
+          <p>Standardises real-time agent↔UI communication via typed events streamed over SSE.</p>
+        </div>
+        <div class="protocol-card">
+          <strong>🔧 MCP Protocol</strong>
+          <p>Model Context Protocol — agents discover and invoke typed tools via a registry.</p>
+        </div>
+        <div class="protocol-card">
+          <strong>📡 SSE Transport</strong>
+          <p>Server-Sent Events carry AG-UI event JSON from FastAPI to the browser EventSource.</p>
+        </div>
+      </div>
+      <p class="footer-copy">ShopStream · AG-UI + MCP demonstration project</p>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

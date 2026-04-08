@@ -1,0 +1,27 @@
+[
+  {
+    "id": "A001",
+    "patient_id": "P001",
+    "date": "2025-08-10",
+    "time": "09:00",
+    "doctor": "Dr. Smith",
+    "status": "confirmed"
+  },
+  {
+    "id": "A002",
+    "patient_id": "P002",
+    "date": "2025-08-12",
+    "time": "14:00",
+    "doctor": "Dr. Lee",
+    "status": "pending"
+  },
+  {
+    "id": "A003",
+    "patient_id": "P002",
+    "date": "2025-08-15",
+    "time": "10:00",
+    "doctor": "Dr. Lee",
+    "status": "confirmed",
+    "booked_at": "2026-04-08T01:06:14"
+  }
+]

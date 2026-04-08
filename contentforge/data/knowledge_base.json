@@ -1,0 +1,170 @@
+{
+  "artificial intelligence": {
+    "facts": [
+      "AI market expected to reach $1.8 trillion by 2030",
+      "GPT-4 has 1.8 trillion parameters according to estimates",
+      "Over 70% of enterprises plan to adopt AI by 2025",
+      "AI can process and analyze data 1000x faster than humans",
+      "Machine learning models improve automatically through experience without being explicitly programmed",
+      "Natural language processing enables computers to understand human language with near-human accuracy",
+      "AI-powered drug discovery has reduced research timelines from decades to just a few years",
+      "Computer vision AI can now detect certain cancers more accurately than human radiologists"
+    ],
+    "key_people": [
+      "Sam Altman",
+      "Demis Hassabis",
+      "Yann LeCun",
+      "Geoffrey Hinton",
+      "Fei-Fei Li",
+      "Andrew Ng",
+      "Ilya Sutskever"
+    ],
+    "recent_developments": [
+      "GPT-4o multimodal capabilities bridging text, vision, and audio",
+      "AI agents becoming mainstream in enterprise workflows",
+      "Open source models catching up to proprietary ones",
+      "Retrieval-Augmented Generation (RAG) improving factual accuracy",
+      "AI safety and alignment research gaining institutional momentum",
+      "Edge AI bringing intelligence to resource-constrained devices"
+    ],
+    "statistics": {
+      "investment_2023": "$91.9 billion",
+      "jobs_created": "97 million by 2025",
+      "market_size_2024": "$196.6 billion",
+      "adoption_rate": "77% of devices use AI in some form",
+      "productivity_boost": "40% average productivity increase reported by AI adopters"
+    },
+    "subtopics": [
+      "machine learning",
+      "natural language processing",
+      "computer vision",
+      "robotics",
+      "generative AI",
+      "AI ethics"
+    ]
+  },
+  "climate change": {
+    "facts": [
+      "Global temperature has risen 1.1 degrees Celsius since pre-industrial times",
+      "2023 was the hottest year on record globally",
+      "Renewable energy now provides 30% of global electricity generation",
+      "Arctic sea ice is declining at 13% per decade",
+      "Ocean acidity has increased by 26% since the Industrial Revolution",
+      "Extreme weather events have increased fivefold over the past 50 years",
+      "Melting glaciers contribute about 21% of global sea level rise",
+      "A single transatlantic flight emits roughly the same CO2 as three months of driving"
+    ],
+    "key_people": [
+      "Greta Thunberg",
+      "Michael Mann",
+      "James Hansen",
+      "Katharine Hayhoe",
+      "Johan Rockstrom",
+      "Bill McKibben"
+    ],
+    "recent_developments": [
+      "Paris Agreement countries updating nationally determined contributions",
+      "Solar panel costs dropped 90% since 2010 making it cheapest electricity source",
+      "Carbon capture and storage technology reaching commercial viability",
+      "Methane pledge signed by over 150 countries at COP26",
+      "Electric vehicle sales surpassing 10 million units in 2022",
+      "Green hydrogen emerging as key solution for hard-to-abate sectors"
+    ],
+    "statistics": {
+      "co2_level": "421 ppm (2023)",
+      "renewable_growth": "9.6% annually",
+      "sea_level_rise": "3.6 mm per year",
+      "fossil_fuel_subsidies": "$7 trillion globally in 2022",
+      "clean_energy_investment_2023": "$1.8 trillion",
+      "species_at_risk": "1 million species face extinction"
+    },
+    "subtopics": [
+      "greenhouse gases",
+      "renewable energy",
+      "carbon capture",
+      "biodiversity loss",
+      "climate policy",
+      "sustainable agriculture"
+    ]
+  },
+  "space exploration": {
+    "facts": [
+      "SpaceX has launched over 200 missions making it the most active launch provider",
+      "NASA's Artemis program aims to return humans to the Moon by 2026",
+      "Mars has been visited by over 50 missions since the 1960s",
+      "The James Webb Space Telescope can observe galaxies formed 13.6 billion years ago",
+      "The International Space Station has been continuously inhabited since November 2000",
+      "Voyager 1 launched in 1977 is now over 23 billion kilometers from Earth",
+      "Private companies are planning commercial space stations to replace the ISS",
+      "Water ice confirmed on the Moon's permanently shadowed craters in 2020"
+    ],
+    "key_people": [
+      "Elon Musk",
+      "Bill Nelson",
+      "Gwynne Shotwell",
+      "Kathy Lueders",
+      "Chris Hadfield",
+      "Peggy Whitson"
+    ],
+    "recent_developments": [
+      "SpaceX Starship fully integrated and undergoing orbital test flights",
+      "Commercial space stations from Axiom and Blue Origin in development",
+      "NASA Lunar Gateway orbital platform entering design phase",
+      "India's Chandrayaan-3 successfully landed near the Moon's south pole in 2023",
+      "OSIRIS-REx successfully returned asteroid samples to Earth in 2023",
+      "Mars Sample Return mission planning underway as international collaboration"
+    ],
+    "statistics": {
+      "private_space_investment_2023": "$9.6 billion",
+      "satellites_in_orbit": "8,000+",
+      "iss_cost": "$150 billion total investment",
+      "space_economy_2040": "$1 trillion projected",
+      "starlink_satellites": "5,000+ operational satellites",
+      "astronauts_to_date": "600+ humans have reached space"
+    },
+    "subtopics": [
+      "lunar exploration",
+      "Mars missions",
+      "commercial spaceflight",
+      "space telescopes",
+      "satellite technology",
+      "asteroid mining"
+    ]
+  },
+  "quantum computing": {
+    "facts": [
+      "Quantum computers use qubits that can exist in superposition unlike classical binary bits",
+      "IBM has built a 1,000+ qubit quantum processor called Condor",
+      "Quantum computers can theoretically break current RSA encryption standards",
+      "Google claimed quantum supremacy in 2019 solving a problem in 200 seconds vs 10,000 years classically",
+      "Quantum error correction remains the biggest technical challenge in the field",
+      "D-Wave systems use quantum annealing for optimization problems",
+      "Post-quantum cryptography standards are being developed by NIST"
+    ],
+    "key_people": [
+      "John Preskill",
+      "Peter Shor",
+      "Michele Mosca",
+      "Hartmut Neven",
+      "Jay Gambetta"
+    ],
+    "recent_developments": [
+      "IBM Quantum roadmap targeting fault-tolerant quantum computing by 2033",
+      "Microsoft investing heavily in topological qubits for stability",
+      "Quantum networking and quantum internet research advancing rapidly",
+      "Pharmaceutical companies using quantum simulations for drug discovery"
+    ],
+    "statistics": {
+      "market_size_2030": "$450 billion projected",
+      "investment_2023": "$35 billion globally",
+      "companies_involved": "300+ startups and major tech companies"
+    },
+    "subtopics": [
+      "qubits",
+      "quantum cryptography",
+      "quantum algorithms",
+      "quantum networking",
+      "quantum sensing"
+    ]
+  }
+}

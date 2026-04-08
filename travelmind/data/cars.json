@@ -1,0 +1,5 @@
+[
+  {"id": "CR001", "city": "Paris", "type": "Economy", "company": "Europcar", "price_per_day": 45, "available": true},
+  {"id": "CR002", "city": "Paris", "type": "Compact", "company": "Hertz", "price_per_day": 65, "available": true},
+  {"id": "CR003", "city": "London", "type": "Economy", "company": "Enterprise", "price_per_day": 40, "available": true}
+]

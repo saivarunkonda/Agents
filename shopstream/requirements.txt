@@ -1,0 +1,12 @@
+# ShopStream — Python dependencies
+# Install with:  pip install -r requirements.txt
+
+# Web framework — provides FastAPI, StreamingResponse, StaticFiles, etc.
+fastapi
+
+# ASGI server — runs the FastAPI app
+# Use:  uvicorn backend.main:app --reload --port 8000
+uvicorn[standard]
+
+# python-multipart is required by FastAPI for form data (optional but recommended)
+python-multipart

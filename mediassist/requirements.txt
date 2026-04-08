@@ -1,0 +1,14 @@
+# MediAssist - Healthcare Agent System
+# All dependencies are from the Python Standard Library.
+# No external packages are required to run this project.
+#
+# The packages below are listed for documentation/compatibility purposes only:
+#   - dataclasses: built-in since Python 3.7 (backport available for < 3.7)
+#   - uuid:        built-in stdlib module
+#   - json:        built-in stdlib module
+#   - datetime:    built-in stdlib module
+#   - pathlib:     built-in stdlib module (since Python 3.4)
+#   - typing:      built-in stdlib module (since Python 3.5)
+
+# Backport only needed for Python < 3.7
+dataclasses; python_version < "3.7"
